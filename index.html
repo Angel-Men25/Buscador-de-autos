@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra Autos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="top-nav">
+            <div class="down-nav container">
+                <a href="./index.html" class="logo"> COMPRA AUTOS</a>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <button class="switch" id="switch">
+                                <span><i class="fa-solid fa-sun"></i></span>
+                                <span><i class="fa-solid fa-moon"></i></span>
+                            </button>    
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="autos container">
+            <form class="buscador" id="buscador">
+                <div class="buscador__grupo">
+                    <label for="marca">Marca</label>
+                    <select id="marca">
+                        <option value="">Seleccione</option>
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes Benz">Mercedes Benz</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Dodge">Dodge</option>
+                    </select>
+                </div>
+                <div class="buscador__grupo">
+                    <label for="year">Año</label>
+                    <select id="year">
+                        <option value="">Seleccione</option>
+                    </select>
+                </div>
+                <div class="buscador__grupo">
+                    <label for="minimo">Precio mínimo</label>
+                    <select id="minimo">
+                        <option value="">Seleccione</option>
+                        <option value="20000">20,000</option>
+                        <option value="30000">30,000</option>
+                        <option value="40000">40,000</option>
+                        <option value="50000">50,000</option>
+                        <option value="60000">60,000</option>
+                        <option value="70000">70,000</option>
+                        <option value="80000">80,000</option>
+                        <option value="90000">90,000</option>
+                    </select>
+                </div>
+                <div class="buscador__grupo">
+                    <label for="maximo">Precio máximo</label>
+                    <select id="maximo">
+                        <option value="">Seleccione</option>
+                        <option value="20000">20,000</option>
+                        <option value="30000">30,000</option>
+                        <option value="40000">40,000</option>
+                        <option value="50000">50,000</option>
+                        <option value="60000">60,000</option>
+                        <option value="70000">70,000</option>
+                        <option value="80000">80,000</option>
+                        <option value="90000">90,000</option>
+                    </select>
+                </div>
+                <div class="buscador__grupo">
+                    <label for="puertas">Puertas</label>
+                    <select id="puertas">
+                        <option value="">Seleccione</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="buscador__grupo">
+                    <label for="transmision">Transmisión</label>
+                    <select id="transmision">
+                        <option value="">Seleccione</option>
+                        <option value="Automatico">Automático</option>
+                        <option value="Manual">Manual</option>
+                    </select>
+                </div>
+                <div class="buscador__grupo">
+                    <label for="color">Color</label>
+                    <select id="color">
+                        <option value="">Seleccione</option>
+                        <option value="Negro">Negro</option>
+                        <option value="Blanco">Blanco</option>
+                        <option value="Azul">Azul</option>
+                        <option value="Rojo">Rojo</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="resultado" id="resultado">
+                <h2 class="resultado__title">RESULTADOS: <span id="numerito">0</span></h2>
+                <section class="cards__container" id="cards__container">
+                    <!-- Cards con JS -->
+                </section>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/darkMode.js"></script>
+    <script src="https://kit.fontawesome.com/1d47c3ee1f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
